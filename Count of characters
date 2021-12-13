@@ -1,0 +1,12 @@
+def cnt(st,chr):
+
+    c=0
+    for i in range(len(st)-len(chr)+1):
+        if(st[i]==chr[0]):
+            if(st[i:i+len(chr)]==chr):
+                c+=1
+    return c
+#main
+st=input("Str")
+chr=input("chr")
+print("count of {} in {} is {}".forma
