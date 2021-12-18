@@ -1,0 +1,6 @@
+def rem(st,chr):
+    for i in st:
+        if(i in chr):
+            st=st[:st.index(i)]+st[st.index(i)+1:]
+    return st
+print(rem('hello world','hlo'))
